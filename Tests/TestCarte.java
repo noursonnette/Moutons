@@ -10,14 +10,15 @@ import java.util.ArrayList;
 public class TestCarte {
     public Carte c = new Carte();
     ArrayList a = new ArrayList(c.getface1().size());
+    
 @Test
 public void testConstructor() {
     System.out.println("--------------------\ntestConstructor\n--------------------");
     Assert.assertTrue(c.getface1().isEmpty());
-    Assert.assertTrue(c.addElement(1));
-    Assert.assertTrue(c.addElement(2));
-    Assert.assertTrue(c.addElement(3));
-    Assert.assertTrue(c.addElement(4));
+    Assert.assertTrue(c.addElementFace1(1));
+    Assert.assertTrue(c.addElementFace1(2));
+    Assert.assertTrue(c.addElementFace1(3));
+    Assert.assertTrue(c.addElementFace1(4));
     System.out.println(" c  " + c.toString());
 
     a.add(1);
@@ -28,44 +29,54 @@ public void testConstructor() {
 }
 
  @Test
- public void testPivoterDroite() {
-     System.out.println("--------------------\ntestPivoterDroite\n--------------------");
+ public void testpivoterFace1Droite() {
+     System.out.println("--------------------\ntestpivoterFace1Droite\n--------------------");
      c.viderTab();
-     Assert.assertTrue(c.addElement(1));
-     Assert.assertTrue(c.addElement(2));
-     Assert.assertTrue(c.addElement(3));
-     Assert.assertTrue(c.addElement(4));
+     Assert.assertTrue(c.addElementFace1(1));
+     Assert.assertTrue(c.addElementFace1(2));
+     Assert.assertTrue(c.addElementFace1(3));
+     Assert.assertTrue(c.addElementFace1(4));
      a.clear();
      a.add(2);
      a.add(3);
      a.add(4);
      a.add(1);
      System.out.println(" c before : " + c.toString());
-     c.pivoterDroite();
+     c.pivoterFace1Droite();
      System.out.println(" c after : " + c.toString());
      Assert.assertEquals(a, c.getface1());
  }
 
 @Test
-public void testPivoterGauche(){
-    System.out.println("--------------------\ntestPivoterGauche\n--------------------");
+public void testpivoterFace1Gauche(){
+    System.out.println("--------------------\ntestpivoterFace1Gauche\n--------------------");
     a.clear();
     a.add(4);
     a.add(1);
     a.add(2);
     a.add(3);
     c.viderTab();
-    Assert.assertTrue(c.addElement(1));
-    Assert.assertTrue(c.addElement(2));
-    Assert.assertTrue(c.addElement(3));
-    Assert.assertTrue(c.addElement(4));
+    Assert.assertTrue(c.addElementFace1(1));
+    Assert.assertTrue(c.addElementFace1(2));
+    Assert.assertTrue(c.addElementFace1(3));
+    Assert.assertTrue(c.addElementFace1(4));
     System.out.println(" c before : " + c.toString());
-    c.pivoterGauche();
+    c.pivoterFace1Gauche();
     System.out.println(" c after: " + c.toString());
     org.junit.Assert.assertEquals(a, c.getface1());
 
 }
 
-
+@Test
+public void testChangePath(){
+    System.out.println("--------------------\ntestChangePath\n--------------------");
+    String s="../img/";
+    System.out.println("Path before : " + c.getPathFace1());
+    Assert.assertEquals(s, c.getPathFace1());
+    c.changePathFace1("newPath");
+    System.out.println("Path after : " + c.getPathFace1());
+    s="newPath";
+    Assert.assertEquals(s, c.getPathFace1());
+}
 
 }
