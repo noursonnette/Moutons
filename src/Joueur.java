@@ -30,7 +30,7 @@ public class Joueur {
 
     public void piocheUneCarte(){
         Pioche.retirerCarte();
-        this.tabCarte[posCarte]=new Carte("nomCarte");
+        this.tabCarte[posCarte]=new Carte();
         this.posCarte+=1;
     }
 

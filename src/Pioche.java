@@ -1,4 +1,7 @@
+import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
+
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by Charline & Kévin on 20/04/2015.
@@ -6,10 +9,12 @@ import java.util.ArrayList;
 public class Pioche {
 
     ArrayList<Carte> listeCartes = new ArrayList<Carte>(77);
+    private final int nbCartesTotal=77;
+    private final int nbCartesInutiles=9;
 
     public Pioche(){
 
-        // Centre du village
+        // Centre du village Position 0
         Carte c=new Carte();
         c.addElementFace1(4);
         c.addElementFace1(4);
@@ -23,7 +28,23 @@ public class Pioche {
         c.viderTabFace1();
         c.viderTabFace2();
 
-        // Loup rouge
+        // Berger rouge Position 1
+
+        // Berger bleu Position 2
+
+        // Berger jaune Position 3
+
+        // Berger noir Position 4
+
+        // Marqueur rouge Position 5
+
+        // Marqueur bleu Position 6
+
+        // Marqueur jaune Position 7
+
+        // Marqueur noir Position 8
+
+        // Loup rouge Position 9
         c.addElementFace1(6);
         c.addElementFace1(6);
         c.addElementFace1(6);
@@ -37,7 +58,7 @@ public class Pioche {
         c.viderTabFace2();
 
 
-        // Loup bleu
+        // Loup bleu Position 10
         c.addElementFace1(6);
         c.addElementFace1(6);
         c.addElementFace1(6);
@@ -50,7 +71,7 @@ public class Pioche {
         c.viderTabFace1();
         c.viderTabFace2();
 
-        // Loup jaune
+        // Loup jaune Position 11
         c.addElementFace1(6);
         c.addElementFace1(6);
         c.addElementFace1(6);
@@ -63,7 +84,7 @@ public class Pioche {
         c.viderTabFace1();
         c.viderTabFace2();
 
-        // Loup noir
+        // Loup noir Position 12
         c.addElementFace1(6);
         c.addElementFace1(6);
         c.addElementFace1(6);
@@ -80,6 +101,11 @@ public class Pioche {
 
     }
 
-    public static void retirerCarte() {
+    public Carte piocherCarte() {
+        Random r = new Random();
+        int index=r.nextInt(nbCartesTotal-nbCartesInutiles)+nbCartesInutiles;
+        Carte c=this.listeCartes.get(index);
+        this.listeCartes.remove(index);
+        return c;
     }
 }
