@@ -2,7 +2,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Created by charline on 20/04/2015.
+ * Created by Charline & Kévin on 20/04/2015.
  */
 public class TestJoueur {
 
