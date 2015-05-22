@@ -29,7 +29,8 @@ public class Joueur {
     public int getPosCarte(){return this.posCarte;}
 
     public void piocheUneCarte(){
-        Pioche.retirerCarte();
+        Pioche p = new Pioche();
+        Carte c = p.piocherCarte();
         this.tabCarte[posCarte]=new Carte();
         this.posCarte+=1;
     }
