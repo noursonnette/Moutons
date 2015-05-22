@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91833a0a-ea0e-4418-ab87-b5884b647d36" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Joueur.java" afterPath="$PROJECT_DIR$/src/Joueur.java" />
-    </list>
+    <list default="true" id="91833a0a-ea0e-4418-ab87-b5884b647d36" name="Default" comment="" />
     <ignored path="Moutons.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -451,12 +449,12 @@
       <workItem from="1432297698489" duration="250000" />
       <workItem from="1432299043886" duration="710000" />
       <workItem from="1432299775173" duration="91000" />
-      <workItem from="1432300019466" duration="172000" />
+      <workItem from="1432300019466" duration="453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1223000" />
+    <option name="totallyTimeSpent" value="1504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
