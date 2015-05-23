@@ -33,7 +33,7 @@ public class Pioche {
         c.viderTabFace2();
 
         // Berger rouge Position 1
-
+        
         // Berger bleu Position 2
 
         // Berger jaune Position 3
@@ -154,7 +154,136 @@ public class Pioche {
         listeCartes.add(c);
         c.viderTabFace1();
         c.viderTabFace2();
+        
+        // Carte 1 Position 17
+        c.addElementFace1(0);
+        c.addElementFace1(4);
+        c.addElementFace1(4);
+        c.addElementFace1(1);
+        c.addElementFace2(2);
+        c.addElementFace2(3);
+        c.addElementFace2(2);
+        c.addElementFace2(2);
+        listeCartes.add(c);
+        c.viderTabFace1();
+        c.viderTabFace2();
+        
+        // Carte 2 Position 18
+        c.addElementFace1(3);
+        c.addElementFace1(4);
+        c.addElementFace1(4);
+        c.addElementFace1(3);
+        c.addElementFace2(0);
+        c.addElementFace2(1);
+        c.addElementFace2(2);
+        c.addElementFace2(2);
+        listeCartes.add(c);
+        c.viderTabFace1();
+        c.viderTabFace2();
 
+        // Carte 3 Position 19
+        c.addElementFace1(0);
+        c.addElementFace1(4);
+        c.addElementFace1(0);
+        c.addElementFace1(0);
+        c.addElementFace2(2);
+        c.addElementFace2(2);
+        c.addElementFace2(1);
+        c.addElementFace2(3);
+        listeCartes.add(c);
+        c.viderTabFace1();
+        c.viderTabFace2();
+
+        // Carte 4 Position 20
+        c.addElementFace1(3);
+        c.addElementFace1(5);
+        c.addElementFace1(3);
+        c.addElementFace1(3);
+        c.addElementFace2(0);
+        c.addElementFace2(2);
+        c.addElementFace2(3);
+        c.addElementFace2(1);
+        listeCartes.add(c);
+        c.viderTabFace1();
+        c.viderTabFace2();
+        
+        // Carte 5 Position 21
+        c.addElementFace1(3);
+        c.addElementFace1(5);
+        c.addElementFace1(5);
+        c.addElementFace1(0);
+        c.addElementFace2(1);
+        c.addElementFace2(1);
+        c.addElementFace2(2);
+        c.addElementFace2(3);
+        listeCartes.add(c);
+        c.viderTabFace1();
+        c.viderTabFace2();
+        
+        // Carte 6 Position 22
+        c.addElementFace1(2);
+        c.addElementFace1(4);
+        c.addElementFace1(0);
+        c.addElementFace1(0);
+        c.addElementFace2(3);
+        c.addElementFace2(1);
+        c.addElementFace2(1);
+        c.addElementFace2(3);
+        listeCartes.add(c);
+        c.viderTabFace1();
+        c.viderTabFace2();
+        
+        // Carte 7 Position 23
+        c.addElementFace1(3);
+        c.addElementFace1(4);
+        c.addElementFace1(4);
+        c.addElementFace1(2);
+        c.addElementFace2(1);
+        c.addElementFace2(0);
+        c.addElementFace2(1);
+        c.addElementFace2(1);
+        listeCartes.add(c);
+        c.viderTabFace1();
+        c.viderTabFace2();
+        
+        // Carte 8 Position 24
+        c.addElementFace1(3);
+        c.addElementFace1(4);
+        c.addElementFace1(3);
+        c.addElementFace1(3);
+        c.addElementFace2(2);
+        c.addElementFace2(2);
+        c.addElementFace2(1);
+        c.addElementFace2(0);
+        listeCartes.add(c);
+        c.viderTabFace1();
+        c.viderTabFace2();
+        
+        // Carte 9 Position 25
+        c.addElementFace1(0);
+        c.addElementFace1(4);
+        c.addElementFace1(1);
+        c.addElementFace1(1);
+        c.addElementFace2(0);
+        c.addElementFace2(1);
+        c.addElementFace2(3);
+        c.addElementFace2(3);
+        listeCartes.add(c);
+        c.viderTabFace1();
+        c.viderTabFace2();
+        
+        // Carte 10 Position 26
+        c.addElementFace1(0);
+        c.addElementFace1(5);
+        c.addElementFace1(0);
+        c.addElementFace1(0);
+        c.addElementFace2(2);
+        c.addElementFace2(0);
+        c.addElementFace2(3);
+        c.addElementFace2(1);
+        listeCartes.add(c);
+        c.viderTabFace1();
+        c.viderTabFace2();
 
 
     }
