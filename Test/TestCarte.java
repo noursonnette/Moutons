@@ -31,7 +31,8 @@ public void testConstructor() {
  @Test
  public void testpivoterFace1Droite() {
      System.out.println("--------------------\ntestpivoterFace1Droite\n--------------------");
-     c.viderTab();
+     c.viderTabFace1();
+     c.viderTabFace2();
      Assert.assertTrue(c.addElementFace1(1));
      Assert.assertTrue(c.addElementFace1(2));
      Assert.assertTrue(c.addElementFace1(3));
@@ -55,7 +56,8 @@ public void testpivoterFace1Gauche(){
     a.add(1);
     a.add(2);
     a.add(3);
-    c.viderTab();
+    c.viderTabFace1();
+    c.viderTabFace2();
     Assert.assertTrue(c.addElementFace1(1));
     Assert.assertTrue(c.addElementFace1(2));
     Assert.assertTrue(c.addElementFace1(3));
