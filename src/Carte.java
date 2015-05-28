@@ -103,7 +103,11 @@ public class Carte {
         return s;
     }
 
-    public void viderTab() {
+    public void viderTabFace1() {
         this.face1.clear();
+    }
+
+    public void viderTabFace2() {
+        this.face2.clear();
     }
 }
