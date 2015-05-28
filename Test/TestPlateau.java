@@ -4,7 +4,7 @@ import org.junit.Test;
 /**
  * Created by User on 20/04/2015.
  */
-public class TestPlateau {
+public class TestMain {
 
     @Test
     public void TestPlateau() {
@@ -28,19 +28,21 @@ public class TestPlateau {
         }
         while(!verif){
             try{
-                p.addCarte(5,6, new Carte());
+                p.addCarte(5,5, new Carte());
                 verif = true ;
             }
             catch (mauvaiseHauteurException e) {
                 System.out.println(e);
                 p.augmenterHauteurBas();
+                p.augmenterHauteurHaut();
             }
             catch (mauvaiseLongueurException e) {
                 System.out.println(e);
                 p.augmenterLongueurDroite();
+                p.augmenterLongueurGauche();
             }
         }
         /* Test getTaille */
-        Assert.assertEquals(p.getTaille(), 30);
+        Assert.assertEquals(p.getTaille(), 25);
     }
 }
