@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 
+/**
+ * Created by User on 20/04/2015.
+ */
 public class Plateau {
     protected int hauteurBas;
     protected int hauteurHaut;
@@ -40,7 +43,7 @@ public class Plateau {
     }
 
     public void augmenterHauteurBas() { // en bas
-        for (int i = 0; i < longueurDroite; i++) {
+        for (int i = 0; i <= longueurDroite; i++) {
             tableau.add(hauteurBas * longueur + i, new PlaceCarte());
         }
         hauteurBas++;
@@ -48,7 +51,8 @@ public class Plateau {
     }
 
     public void augmenterLongueurDroite() { // à droite
-        for (int i = hauteurBas * longueur; i > 0; i = i - longueur) {
+        for (int i = hauteur * longueur; i > 0; i = i - longueur) {
+            System.out.println(i);
             tableau.add(i, new PlaceCarte());
         }
         longueurDroite++;
@@ -56,10 +60,8 @@ public class Plateau {
     }
 
     public void augmenterLongueurGauche() {
-        int compteur = 0;
-        for (int i = (hauteur * longueur) - longueur; i > 0; i = i - (longueur + compteur)) {
+        for (int i = (hauteur * longueur) - (longueur); i >= 0; i = i - longueur) {
             tableau.add(i, new PlaceCarte());
-            compteur = 1;
         }
         longueurGauche++;
         longueur = longueurGauche + longueurDroite ;
@@ -70,10 +72,11 @@ public class Plateau {
     }
 
     public void augmenterHauteurHaut() {
-        for (int i = longueur; i < 0; i--) {
+        for (int i = longueur; i >= 0; i--) {
             tableau.add(0, new PlaceCarte()) ;
         }
         hauteurHaut++;
         hauteur = hauteurBas + hauteurHaut ;
+        // ajouter une variable hauteur bas, hauteur haut, longueur gauche et droite (qui va permettre de maîtriser la grille)
     }
 }
