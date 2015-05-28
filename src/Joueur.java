@@ -1,5 +1,7 @@
+import java.util.ArrayList;
+
 /**
- * Created by Charline & Kévin on 20/04/2015.
+ * Created by charline on 20/04/2015.
  */
 public class Joueur {
 
@@ -9,6 +11,7 @@ public class Joueur {
     private String[] couleur;
     private Carte[] tabCarte;
     private int posCarte=0;
+    private ArrayList<Carte> MainJoueur;
 
     public Joueur(String nom, int poscouleur){
         this.nom=nom;
@@ -16,6 +19,7 @@ public class Joueur {
         couleur= new String[]{"rouge","bleu","jaune","noir","village","foret","loup","chasseur"};
         this.nbCarte=77;
         tabCarte=new Carte[nbCarte];
+        MainJoueur=new ArrayList<Carte>();
     }
 
     public String getNom() {
@@ -28,15 +32,27 @@ public class Joueur {
 
     public int getPosCarte(){return this.posCarte;}
 
-    public void piocheUneCarte(){
-        Pioche p = new Pioche();
-        Carte c = p.piocherCarte();
-        this.tabCarte[posCarte]=new Carte();
-        this.posCarte+=1;
+    public void ajouterUneCarte(Carte uneCarte){
+        MainJoueur.add(uneCarte);
     }
+
+    public void supprimerUneCarte(int indice){
+        MainJoueur.remove(indice);
+    }
+
+    public ArrayList<Carte> getMainJoueur(){
+        return MainJoueur;
+    }
+
+   public void piocheUneCarte(){
+   //     Carte c = Pioche.piocherCarte();
+   //     this.tabCarte[posCarte]=new Carte();
+   //    this.posCarte+=1;
+   }
 
     public void JoueUneCarte(int posCarte){
         // Supprime element du tableau à position posCarte
         // Place la carte sur la grille (plateau)
+        supprimerUneCarte(posCarte);
     }
 }
