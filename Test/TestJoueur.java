@@ -11,26 +11,21 @@ public class TestJoueur {
         Joueur j = new Joueur("Dupont",0);
 
         Assert.assertEquals("Dupont",j.getNom());
-        Assert.assertNotEquals("Dup",j.getNom());
     }
 
     @Test
     public void testGetCouleur(){
         Joueur j = new Joueur("Dupont",0);
         Assert.assertEquals("rouge",j.getCouleur());
-        Assert.assertNotEquals("rou",j.getCouleur());
 
         Joueur j1 = new Joueur("Dupont",1);
         Assert.assertEquals("bleu",j1.getCouleur());
-        Assert.assertNotEquals("ble",j1.getCouleur());
 
         Joueur j2= new Joueur("Dupont",2);
         Assert.assertEquals("jaune",j2.getCouleur());
-        Assert.assertNotEquals("rou",j2.getCouleur());
 
         Joueur j3 = new Joueur("Dupont",3);
         Assert.assertEquals("noir",j3.getCouleur());
-        Assert.assertNotEquals("rou",j3.getCouleur());
     }
 
     @Test
