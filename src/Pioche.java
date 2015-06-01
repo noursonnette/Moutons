@@ -28,25 +28,51 @@ public class Pioche {
         c.addElementFace2(4);
         c.addElementFace2(4);
         c.addElementFace2(4);
+        c.changePathFace1("../img/center.jpg");
+        c.changePathFace2("../img/center.jpg");
         listeCartes.add(c);
         c.viderTabFace1();
         c.viderTabFace2();
 
         // Berger rouge Position 1
+        c.changePathFace1("../img/c1_f1.jpg");
+        c.changePathFace2("../img/whoisit.jpg");
+        listeCartes.add(c);
         
         // Berger bleu Position 2
-
+        c.changePathFace1("../img/c2_f1.jpg");
+        c.changePathFace2("../img/whoisit.jpg");
+        listeCartes.add(c);
+        
         // Berger jaune Position 3
+        c.changePathFace1("../img/c3_f1.jpg");
+        c.changePathFace2("../img/whoisit.jpg");
+        listeCartes.add(c);
 
         // Berger noir Position 4
+        c.changePathFace1("../img/c4_f1.jpg");
+        c.changePathFace2("../img/whoisit.jpg");
+        listesCartes.add(c);
 
         // Marqueur rouge Position 5
+        c.changePathFace1("../img/c5.jpg");
+        c.changePathFace2("../img/c5.jpg");
+        listeCartes.add(c);
 
         // Marqueur bleu Position 6
+        c.changePathFace1("../img/c6.jpg");
+        c.changePathFace2("../img/c6.jpg");
+        listeCartes.add(c);
 
         // Marqueur jaune Position 7
+        c.changePathFace1("../img/c7.jpg");
+        c.changePathFace2("../img/c7.jpg");
+        listeCartes.add(c);
 
         // Marqueur noir Position 8
+        c.changePathFace1("../img/c8.jpg");
+        c.changePathFace2("../img/c8.jpg");
+        listeCartes.add(c);
 
         // Loup rouge Position 9
         c.addElementFace1(6);
@@ -57,6 +83,8 @@ public class Pioche {
         c.addElementFace2(0);
         c.addElementFace2(0);
         c.addElementFace2(0);
+        c.changePathFace1("../img/wolf.jpg");
+        c.changePathFace2("../img/red.jpg");
         listeCartes.add(c);
         c.viderTabFace1();
         c.viderTabFace2();
@@ -71,6 +99,8 @@ public class Pioche {
         c.addElementFace2(1);
         c.addElementFace2(1);
         c.addElementFace2(1);
+        c.changePathFace1("../img/wolf.jpg");
+        c.changePathFace2("../img/blue.jpg");
         listeCartes.add(c);
         c.viderTabFace1();
         c.viderTabFace2();
@@ -84,6 +114,8 @@ public class Pioche {
         c.addElementFace2(2);
         c.addElementFace2(2);
         c.addElementFace2(2);
+        c.changePathFace1("../img/wolf.jpg");
+        c.changePathFace2("../img/blue.jpg");
         listeCartes.add(c);
         c.viderTabFace1();
         c.viderTabFace2();
@@ -97,6 +129,8 @@ public class Pioche {
         c.addElementFace2(3);
         c.addElementFace2(3);
         c.addElementFace2(3);
+        c.changePathFace1("../img/wolf.jpg");
+        c.changePathFace2("../img/black.jpg");
         listeCartes.add(c);
         c.viderTabFace1();
         c.viderTabFace2();
@@ -111,6 +145,8 @@ public class Pioche {
         c.addElementFace2(0);
         c.addElementFace2(0);
         c.addElementFace2(0);
+        c.changePathFace1("../img/hunter.jpg");
+        c.changePathFace2("../img/red.jpg");
         listeCartes.add(c);
         c.viderTabFace1();
         c.viderTabFace2();
@@ -125,11 +161,13 @@ public class Pioche {
         c.addElementFace2(1);
         c.addElementFace2(1);
         c.addElementFace2(1);
+        c.changePathFace1("../img/hunter.jpg");
+        c.changePathFace2("../img/blue.jpg");
         listeCartes.add(c);
         c.viderTabFace1();
         c.viderTabFace2();
 
-        // CHasseur jaune Position 15
+        // Chasseur jaune Position 15
         c.addElementFace1(7);
         c.addElementFace1(7);
         c.addElementFace1(7);
@@ -138,6 +176,8 @@ public class Pioche {
         c.addElementFace2(2);
         c.addElementFace2(2);
         c.addElementFace2(2);
+        c.changePathFace1("../img/hunter.jpg");
+        c.changePathFace2("../img/yellow.jpg");
         listeCartes.add(c);
         c.viderTabFace1();
         c.viderTabFace2();
@@ -151,6 +191,8 @@ public class Pioche {
         c.addElementFace2(3);
         c.addElementFace2(3);
         c.addElementFace2(3);
+        c.changePathFace1("../img/hunter.jpg");
+        c.changePathFace2("../img/black.jpg");
         listeCartes.add(c);
         c.viderTabFace1();
         c.viderTabFace2();
